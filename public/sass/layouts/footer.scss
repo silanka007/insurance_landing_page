@@ -1,0 +1,25 @@
+.footer{
+    color: $neutral-dark-violet;
+
+    .footer-container{
+        width: 75vw;
+        margin: 0 auto;
+
+        .footer-nav-container{
+            display: flex;
+            justify-content: space-between;
+            margin: 6rem 0;
+
+            .footer-nav{
+                text-transform: uppercase;
+                font-weight: 400;
+
+                .footer-nav-item{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    
+}

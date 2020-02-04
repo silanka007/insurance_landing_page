@@ -1,0 +1,22 @@
+.info-section-container{
+    background-color: $primary-dark-violet;
+    color: white;
+    width: 75vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .pattern-how-we-work{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: inherit;
+
+    }
+    .info-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6rem;
+    }
+}
