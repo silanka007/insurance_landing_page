@@ -1,0 +1,41 @@
+.header{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $font-family-header;
+    font-weight: 400;
+    margin: 1rem;
+    color: $primary-dark-violet;
+
+    .logo{
+        width: auto;
+        text-transform: uppercase;
+    }
+
+    .nav{
+
+        .nav-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:last-child{
+                padding-right: 0px;
+            }
+
+            .nav-item{
+                text-transform: uppercase;
+                display: inline-block;
+                text-decoration: none;
+                padding: 1.5rem;            
+            
+                &:hover{
+                    background-color: $primary-dark-violet;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}

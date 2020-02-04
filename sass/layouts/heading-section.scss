@@ -1,0 +1,31 @@
+.heading-section{
+    height: 95vh;
+
+
+    .heading-container{
+        height: 75vh;
+        background-color: $primary-dark-violet;
+
+
+        .heading-row{
+            width: 70%;
+            padding: 3rem;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+
+
+            .heading-image{
+                margin-left: 20rem;
+    
+                img{
+                   width:45rem; 
+                }
+                
+    
+            }
+        }
+        
+    }
+    
+}

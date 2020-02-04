@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem; }
+
+.container {
+  width: 85vw;
+  background-color: #fcfcfc;
+  margin: 0 auto; }
+
+.header {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  margin: 1rem;
+  color: #2d2640; }
+  .header .logo {
+    width: auto;
+    text-transform: uppercase; }
+  .header .nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .nav .nav-menu:last-child {
+      padding-right: 0px; }
+    .header .nav .nav-menu .nav-item {
+      text-transform: uppercase;
+      display: inline-block;
+      text-decoration: none;
+      padding: 1.5rem; }
+      .header .nav .nav-menu .nav-item:hover {
+        background-color: #2d2640;
+        color: white; }
+
+.heading-section {
+  height: 95vh; }
+  .heading-section .heading-container {
+    height: 75vh;
+    background-color: #2d2640; }
+    .heading-section .heading-container .heading-row {
+      width: 70%;
+      padding: 3rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto; }
+      .heading-section .heading-container .heading-row .heading-image {
+        margin-left: 20rem; }
+        .heading-section .heading-container .heading-row .heading-image img {
+          width: 45rem; }

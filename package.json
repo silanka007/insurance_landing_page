@@ -1,0 +1,22 @@
+{
+  "name": "insure-landing-page-master",
+  "version": "1.0.0",
+  "description": "A simple insurance landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silanka007/insurance_landing_page.git"
+  },
+  "author": "Paul Onyekwelu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silanka007/insurance_landing_page/issues"
+  },
+  "homepage": "https://github.com/silanka007/insurance_landing_page#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

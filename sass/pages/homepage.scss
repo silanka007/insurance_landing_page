@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    
+}
+.container{
+        width: 85vw;
+        background-color: rgb(252, 252, 252);
+        margin: 0 auto;
+        // border: 1px solid rgba(0, 0, 0, 0.63);
+    }
