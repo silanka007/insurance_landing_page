@@ -4,7 +4,8 @@
   "description": "A simple insurance landing page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./index.css -w"
+    "compile:sass": "node-sass ./public/sass/main.scss ./public/index.css -w",
+    "deploy" : "gh-pages -d public"    
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,12 @@
   },
   "author": "Paul Onyekwelu",
   "license": "ISC",
+  "homepage": "https://silanka007.github.io/insurance_landing_page",
   "bugs": {
     "url": "https://github.com/silanka007/insurance_landing_page/issues"
   },
-  "homepage": "https://github.com/silanka007/insurance_landing_page#readme",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
