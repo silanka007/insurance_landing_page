@@ -1,7 +1,6 @@
 .heading-section{
     height: 110vh;
     overflow: hidden;
-    border-bottom: 2px solid red;
 
     .heading-container{
         height: 63%;
@@ -20,24 +19,9 @@
                 color: white;
 
                 .heading-title-line{
-                    width: .5rem;
+                    width: 10rem;
                 }
-
-                .heading-title-main1{
-                    font-size: 4rem;
-                    font-weight: 700;
-                    margin-top: 4rem;
-
-                    .heading-title-main2{
-                        display: block;
-                        word-spacing: .5rem;
-                    }
-                }
-                
-                .heading-paragraph{
-                    margin: 3rem 0;
-                    font-size: 1.3rem;
-                }
+            
                 .heading-button{
                     text-transform: uppercase;
                     color: white;
