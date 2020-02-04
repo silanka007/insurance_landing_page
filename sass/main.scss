@@ -1,12 +1,19 @@
 @import "./abstract/variables";
 
+
 @import "./pages/homepage";
+
 
 @import "./components/button";
 @import "./components/horizontal-line";
 @import "./components/section-title";
-@import "./components/section-paragraph.scss";
+@import "./components/section-paragraph";
+
 
 @import "./layouts/header";
 @import "./layouts/heading-section";
-@import "./layouts/feature-section.scss";
+@import "./layouts/feature-section";
+@import "./layouts/info-section";
+@import "./layouts/footer";
+
+@import "./utility/margin";
