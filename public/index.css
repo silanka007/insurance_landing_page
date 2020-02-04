@@ -1,4 +1,36 @@
-@impo @import "./pages/homepage";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Karla"; }
+
+.container {
+  width: 85vw;
+  background-color: #fcfcfc;
+  margin: 0 auto; }
+
+.heading-line {
+  width: 10rem; }
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 4rem; }
+  .section-title .section-title-sub {
+    display: block;
+    word-spacing: .5rem; }
+
+.section-paragraph {
+  margin: 3rem 0;
+  font-size: 1.5rem; }
+
 .header {
   width: auto;
   display: flex;
@@ -26,8 +58,7 @@
 
 .heading-section {
   height: 110vh;
-  overflow: hidden;
-  border-bottom: 2px solid red; }
+  overflow: hidden; }
   .heading-section .heading-container {
     height: 63%;
     background-color: #2d2640;
@@ -41,16 +72,8 @@
       margin: 0 auto; }
       .heading-section .heading-container .heading-row .heading-title {
         color: white; }
-        .heading-section .heading-container .heading-row .heading-title .heading-title-main1 {
-          font-size: 4rem;
-          font-weight: 700;
-          margin-top: 4rem; }
-          .heading-section .heading-container .heading-row .heading-title .heading-title-main1 .heading-title-main2 {
-            display: block;
-            word-spacing: .5rem; }
-        .heading-section .heading-container .heading-row .heading-title .heading-paragraph {
-          margin: 3rem 0;
-          font-size: 1.3rem; }
+        .heading-section .heading-container .heading-row .heading-title .heading-title-line {
+          width: 10rem; }
         .heading-section .heading-container .heading-row .heading-title .heading-button {
           text-transform: uppercase;
           color: white;
@@ -68,3 +91,23 @@
       top: -8rem;
       right: 0;
       width: 40rem; }
+
+.feature-section-container {
+  width: 75vw;
+  margin: 0 auto; }
+  .feature-section-container .feature-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0 6rem 0; }
+    .feature-section-container .feature-section .feature-section-item {
+      padding-right: 1.5rem; }
+      .feature-section-container .feature-section .feature-section-item .feature-section-item-icon {
+        display: inline-block;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        border-radius: 100px;
+        color: white;
+        background-color: #95a9c6;
+        margin-bottom: 3rem; }
+      .feature-section-container .feature-section .feature-section-item .feature-section-item-title {
+        font-weight: 700;
+        margin-bottom: 1.5rem; }
