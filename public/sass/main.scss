@@ -1,6 +1,12 @@
 @import "./abstract/variables";
 
-@import "./pages/homepage";
+
+
+
+@import "./components/button";
+@import "./components/horizontal-line";
 
 @import "./layouts/header";
 @import "./layouts/heading-section";
+
+@import "./pages/homepage";

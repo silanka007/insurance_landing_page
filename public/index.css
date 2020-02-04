@@ -1,21 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 10px; }
-
-body {
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  font-family: Karla; }
-
-.container {
-  width: 85vw;
-  background-color: #fcfcfc;
-  margin: 0 auto; }
-
+@impo @import "./pages/homepage";
 .header {
   width: auto;
   display: flex;
@@ -58,8 +41,6 @@ body {
       margin: 0 auto; }
       .heading-section .heading-container .heading-row .heading-title {
         color: white; }
-        .heading-section .heading-container .heading-row .heading-title .heading-title-line {
-          width: .5rem; }
         .heading-section .heading-container .heading-row .heading-title .heading-title-main1 {
           font-size: 4rem;
           font-weight: 700;
