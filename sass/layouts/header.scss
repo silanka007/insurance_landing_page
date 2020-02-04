@@ -9,8 +9,8 @@
     color: $primary-dark-violet;
 
     .logo{
-        width: auto;
-        text-transform: uppercase;
+        padding: 2rem;
+
     }
 
     .nav{
@@ -18,7 +18,7 @@
         .nav-menu{
             display: flex;
             justify-content: center;
-            align-items: center;
+
 
             &:last-child{
                 padding-right: 0px;
@@ -28,7 +28,7 @@
                 text-transform: uppercase;
                 display: inline-block;
                 text-decoration: none;
-                padding: 1.5rem;            
+                padding: 2rem;            
             
                 &:hover{
                     background-color: $primary-dark-violet;
