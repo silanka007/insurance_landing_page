@@ -51,6 +51,8 @@ body {
     font-weight: 400; }
     .header .header-container .logo {
       padding: 3rem 0; }
+    .header .header-container input[type="checkbox"] {
+      display: none; }
     .header .header-container .nav .nav-menu:last-child {
       padding-right: 0px; }
     .header .header-container .nav .nav-menu .nav-item {
@@ -58,6 +60,9 @@ body {
       display: inline-block;
       text-decoration: none;
       padding: 2rem; }
+      .header .header-container .nav .nav-menu .nav-item a {
+        text-decoration: none;
+        color: #2b272f; }
       .header .header-container .nav .nav-menu .nav-item:hover {
         background-color: #2d2640;
         color: white; }
@@ -102,10 +107,7 @@ body {
       padding-right: 1.5rem; }
     .feature-section-container .feature-section .feature-section-item .feature-section-item-icon {
       display: inline-block;
-      padding: 1.5rem 2rem 1.5rem 2rem;
-      border-radius: 100px;
-      color: white;
-      background-color: #95a9c6; }
+      color: white; }
     .feature-section-container .feature-section .feature-section-item .feature-section-item-title {
       font-weight: 700;
       font-family: "DM Serif Display"; }
@@ -165,3 +167,51 @@ body {
 
 .margin-bottom-large {
   margin-bottom: 8rem; }
+
+@media screen and (max-width: 500px) {
+  .header {
+    color: #2d2640; }
+    .header .header-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: block;
+      font-family: "DM Serif Display";
+      font-weight: 400; }
+      .header .header-container input[type="checkbox"] {
+        display: block; }
+      .header .header-container .burger-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+        margin: 2rem;
+        width: 9%;
+        cursor: pointer;
+        display: inline-block;
+        background: url(./images/icon-close.svg) no-repeat 100% center; }
+      .header .header-container .logo {
+        padding: 4rem 2rem; }
+      .header .header-container .nav {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        width: 100%;
+        background-color: #2d2640; }
+        .header .header-container .nav .nav-menu {
+          text-align: center; }
+          .header .header-container .nav .nav-menu .nav-item {
+            margin: 0;
+            padding: 0;
+            display: block;
+            padding: 2rem;
+            list-style-type: none; }
+            .header .header-container .nav .nav-menu .nav-item a {
+              margin: 0;
+              color: white;
+              text-decoration: none; }
+      .header .header-container #menu-toggle:checked + .nav {
+        height: 0; }
+      .header .header-container #menu-toggle:checked + .burger-menu {
+        background: url(../images/icon-hamburger.svg) no-repeat 100% center; } }
