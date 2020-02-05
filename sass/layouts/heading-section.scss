@@ -8,8 +8,7 @@
         position: relative;
 
         .heading-row{
-            width: 70%;
-            padding: 0;
+            width: $width-secondary;
             padding-top: 10rem;
             display: flex;
             justify-content: space-around;
@@ -40,7 +39,8 @@
             position: absolute;
             top: -8rem;
             right: 0;
-            width: 40rem;
+            width: 25vw;
+
         }
     
     }
