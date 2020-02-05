@@ -1,9 +1,22 @@
 .footer{
     color: $neutral-dark-violet;
+    position: relative;
+    padding-bottom: 6rem;
+
+    .pattern-footer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20vw;
+    }
 
     .footer-container{
-        width: 75vw;
+        width: $width-secondary;
         margin: 0 auto;
+
+        .socials{
+            padding: 3rem 0;
+        }
 
         .footer-nav-container{
             display: flex;
@@ -12,11 +25,12 @@
 
             .footer-nav{
                 text-transform: uppercase;
-                font-weight: 400;
+                font-weight: 400;       
 
                 .footer-nav-item{
                     text-decoration: none;
                     list-style-type:none;
+                    padding: 1rem 0;
                 }
             }
         }

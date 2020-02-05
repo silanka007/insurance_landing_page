@@ -40,27 +40,25 @@ body {
   font-size: 1.5rem; }
 
 .header {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: "DM Serif Display";
-  font-weight: 400;
-  margin: 1rem;
   color: #2d2640; }
-  .header .logo {
-    padding: 2rem; }
-  .header .nav .nav-menu {
+  .header .header-container {
+    margin: 0 auto;
+    width: 70vw;
     display: flex;
-    justify-content: center; }
-    .header .nav .nav-menu:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "DM Serif Display";
+    font-weight: 400; }
+    .header .header-container .logo {
+      padding: 3rem 0; }
+    .header .header-container .nav .nav-menu:last-child {
       padding-right: 0px; }
-    .header .nav .nav-menu .nav-item {
+    .header .header-container .nav .nav-menu .nav-item {
       text-transform: uppercase;
       display: inline-block;
       text-decoration: none;
       padding: 2rem; }
-      .header .nav .nav-menu .nav-item:hover {
+      .header .header-container .nav .nav-menu .nav-item:hover {
         background-color: #2d2640;
         color: white; }
 
@@ -72,8 +70,7 @@ body {
     background-color: #2d2640;
     position: relative; }
     .heading-section .heading-container .heading-row {
-      width: 70%;
-      padding: 0;
+      width: 70vw;
       padding-top: 10rem;
       display: flex;
       justify-content: space-around;
@@ -92,10 +89,10 @@ body {
       position: absolute;
       top: -8rem;
       right: 0;
-      width: 40rem; }
+      width: 25vw; }
 
 .feature-section-container {
-  width: 75vw;
+  width: 70vw;
   margin: 0 auto; }
   .feature-section-container .feature-section {
     display: flex;
@@ -116,7 +113,7 @@ body {
 .info-section-container {
   background-color: #2d2640;
   color: white;
-  width: 75vw;
+  width: 70vw;
   margin: 0 auto;
   position: relative;
   overflow: hidden; }
@@ -132,10 +129,19 @@ body {
     padding: 6rem; }
 
 .footer {
-  color: #2b272f; }
+  color: #2b272f;
+  position: relative;
+  padding-bottom: 6rem; }
+  .footer .pattern-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw; }
   .footer .footer-container {
-    width: 75vw;
+    width: 70vw;
     margin: 0 auto; }
+    .footer .footer-container .socials {
+      padding: 3rem 0; }
     .footer .footer-container .footer-nav-container {
       display: flex;
       justify-content: space-between;
@@ -145,7 +151,8 @@ body {
         font-weight: 400; }
         .footer .footer-container .footer-nav-container .footer-nav .footer-nav-item {
           text-decoration: none;
-          list-style-type: none; }
+          list-style-type: none;
+          padding: 1rem 0; }
 
 .margin-top-medium {
   margin-top: 4rem; }
