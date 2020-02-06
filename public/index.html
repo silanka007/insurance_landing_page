@@ -52,7 +52,7 @@
       <div class="heading-container">
         <div class="heading-row">
           <div class="heading-title">
-            <div class="heading-line"></div>
+            <div class="heading-line" id="heading-line-mobile"><hr></div>
             <h1 class="section-title margin-top-medium">Humanizing <span class="section-title-sub">your insurance.</span></h1>
             <p class="section-paragraph">
               Get your life insurance coverage easier and faster. We blend our expertise
@@ -60,20 +60,23 @@
               and your loved ones are protected.
             </p>
             <a href="#" class="button">view plans</a>
+            <!-- intro pattern for mobile view. hidden in desktop layout -->
+            <div class="heading-intro-image-mobile">
+              <img class="pattern-intro-left-mobile" src="./images/bg-pattern-intro-left-mobile.svg" alt="pattern intro left">
+              <img class="pattern-intro-right-mobile" src="./images/bg-pattern-intro-right-mobile.svg" alt="pattern intro right">
+            </div>
           </div>
           <div class="heading-image">
             <picture>
               <source srcset="./images/image-intro-mobile.jpg" media="(max-width: 500px)">
               <img src="./images/image-intro-desktop.jpg" alt="image intro desktop">
             </picture>
-            
           </div>
         </div>
         <div class="heading-intro-image">
           <img class="pattern-intro-left" src="./images/bg-pattern-intro-left-desktop.svg" alt="pattern intro left">
           <img class="pattern-intro-right" src="./images/bg-pattern-intro-right-desktop.svg" alt="pattern intro right">
         </div>
-        
       </div>
     </section>
 
@@ -118,6 +121,7 @@
         </div>
       </div>
       <img class="pattern-how-we-work" src="./images/bg-pattern-how-we-work-desktop.svg" alt="pattern how we work">
+      <img class="pattern-how-we-work-mobile" src="./images/bg-pattern-how-we-work-mobile.svg" alt="pattern how we work">
     </section>
 
     <footer class="footer">
@@ -170,6 +174,7 @@
           </div>
         </div>
         <img class="pattern-footer" src="./images/bg-pattern-footer-desktop.svg" alt="pattern footer">
+        <img class="pattern-footer-mobile" src="./images/bg-pattern-footer-mobile.svg" alt="pattern footer">
       </div>
     </footer>
 
@@ -177,7 +182,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#" class="button">Your Name Here</a>.
+    Coded by <a href="https://paulonyekwelu.com" class="button">PAUL ONYEKWELU</a>.
   </div>
 </body>
 </html>
