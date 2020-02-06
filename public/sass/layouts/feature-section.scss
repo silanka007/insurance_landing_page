@@ -7,14 +7,20 @@
         justify-content: space-between;
         padding: 6rem 0 6rem 0;
 
-        &:not(:last-child){
-            padding-right: 1.5rem;
-        }
+
+        
         
         .feature-section-item{
+            
+            &:not(:last-child){
+                padding-right: 5rem;
+            }
+
+
             .feature-section-item-icon{
                 display: inline-block;
                 color: white;
+
             }
 
             .feature-section-item-title{

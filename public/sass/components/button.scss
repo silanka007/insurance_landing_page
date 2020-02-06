@@ -1,8 +1,9 @@
-.button{
+.button-link-primary{
     display: inline-block;
     text-transform: uppercase;
     color: white;
     text-decoration:none;
     border: 1px solid white;
     padding: 1rem 3rem;
+    z-index: 4;
 }

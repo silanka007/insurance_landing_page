@@ -5,6 +5,16 @@
     .feature-section-container{
         text-align: center;
 
+        .feature-section{
+            flex-direction: column; 
+            
+            .feature-section-item{
+                &:not(:last-child){
+                    padding-right: 0;
+                }
+            }
+        }
+
         .mobile-line{
             display: block;
             margin: 10rem auto 5rem auto;
@@ -12,9 +22,6 @@
         }
     }
 
-    .feature-section{
-        flex-direction: column;  
-    }
     
     .info-section-container{
         width: 100%;
@@ -25,6 +32,7 @@
         }
 
         .pattern-how-we-work-mobile{
+            display: block;
             position: absolute;
             top:0;
             right: -1px;
@@ -66,6 +74,21 @@
                 background: url(./images/icon-hamburger.svg) no-repeat 100% center;
             }
 
+
+            .burger-menu::before{
+                content: "";
+                position: relative;
+                top: 0;
+                right: 0;
+                height: 50px;
+                margin: 2rem;
+                width: 20%;
+                cursor: pointer;
+                display: block;
+                z-index: 10;
+                background-color: red;
+                background: url(./images/icon-close.svg) no-repeat 100% center;
+            }
             
 
             .logo{
@@ -119,8 +142,19 @@
                 height: auto;
                 // overflow: hidden;
             }
-            #menu-toggle:checked + .burger-menu{
-                background: url(../images/icon-hamburger.svg) no-repeat 100% center;
+
+            #menu-toggle:checked + .burger-menu::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 50px;
+                margin: 2rem;
+                width: 9%;
+                cursor: pointer;
+                display: inline-block;
+                z-index: 10;
+                background: url(./images/icon-close.svg) no-repeat 100% center;
             }
         }
         
@@ -221,21 +255,23 @@
         margin: 0;
         padding: 0;
     
-        .pattern-footer{
-            visibility: hidden;
-        }
-
-        .pattern-footer-mobile{
-            visibility: visible;
-            position: absolute;
-            top: 0;
-
-        }
+        
     
         .footer-container{
             padding: 0;
             width: 100%;
             margin: 0 auto;
+
+            .pattern-footer{
+                display: none;
+            }
+    
+            .pattern-footer-mobile{
+                display: block;
+                position: absolute;
+                top: 0;
+    
+            }
 
             .footer-mobile{
                 text-align: center;
