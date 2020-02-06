@@ -17,6 +17,10 @@
             .heading-title{
                 color: white;
 
+                .heading-intro-image-mobile{
+                    visibility: hidden;
+                }
+
                 .heading-title-line{
                     width: 10rem;
                     border-bottom: 1px solid white;
