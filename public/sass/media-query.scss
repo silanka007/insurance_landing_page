@@ -58,9 +58,18 @@
             width: 100%;
             display: block;
 
-            // input[type="checkbox"]{
-            //     display: block;
-            // }
+            input[type="checkbox"]{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 50px;
+                margin: 2rem ;
+                width: 9%;
+                opacity: 0;
+                cursor: pointer;
+                display: inline-block;
+                z-index: 1;
+            }
 
             .burger-menu{
                 position: absolute;
@@ -72,24 +81,7 @@
                 cursor: pointer;
                 display: inline-block;
                 background: url(./images/icon-hamburger.svg) no-repeat 100% center;
-            }
-
-
-            .burger-menu::before{
-                content: "";
-                position: relative;
-                top: 0;
-                right: 0;
-                height: 50px;
-                margin: 2rem;
-                width: 20%;
-                cursor: pointer;
-                display: block;
-                z-index: 10;
-                background-color: red;
-                background: url(./images/icon-close.svg) no-repeat 100% center;
-            }
-            
+            }            
 
             .logo{
                 padding: 4rem 2rem;
@@ -138,22 +130,10 @@
 
             }
 
-            #menu-toggle:checked + .nav{
+            #menu-toggle:checked ~ .nav{
                 height: auto;
-                // overflow: hidden;
             }
-
-            #menu-toggle:checked + .burger-menu::before{
-                content: "";
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 50px;
-                margin: 2rem;
-                width: 9%;
-                cursor: pointer;
-                display: inline-block;
-                z-index: 10;
+            #menu-toggle:checked + .burger-menu{
                 background: url(./images/icon-close.svg) no-repeat 100% center;
             }
         }
@@ -162,6 +142,7 @@
     }
 
     .heading-section{
+        position: relative;
         height: auto;
         overflow: visible;
     

@@ -67,7 +67,6 @@ body {
         text-decoration: none;
         color: #2b272f; }
       .header .header-container .nav .nav-menu .nav-item:hover {
-        backface-visibility: hidden;
         color: #2b272f;
         border: 1px solid #2b272f; }
 
@@ -220,6 +219,17 @@ body {
   .header .header-container {
     width: 100%;
     display: block; }
+    .header .header-container input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      margin: 2rem;
+      width: 9%;
+      opacity: 0;
+      cursor: pointer;
+      display: inline-block;
+      z-index: 1; }
     .header .header-container .burger-menu {
       position: absolute;
       top: 0;
@@ -230,19 +240,6 @@ body {
       cursor: pointer;
       display: inline-block;
       background: url(./images/icon-hamburger.svg) no-repeat 100% center; }
-    .header .header-container .burger-menu::before {
-      content: "";
-      position: relative;
-      top: 0;
-      right: 0;
-      height: 50px;
-      margin: 2rem;
-      width: 20%;
-      cursor: pointer;
-      display: block;
-      z-index: 10;
-      background-color: red;
-      background: url(./images/icon-close.svg) no-repeat 100% center; }
     .header .header-container .logo {
       padding: 4rem 2rem; }
     .header .header-container .nav {
@@ -275,21 +272,12 @@ body {
               background-color: #fafafa;
               color: #2b272f;
               cursor: pointer; }
-    .header .header-container #menu-toggle:checked + .nav {
+    .header .header-container #menu-toggle:checked ~ .nav {
       height: auto; }
-    .header .header-container #menu-toggle:checked + .burger-menu::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 50px;
-      margin: 2rem;
-      width: 9%;
-      cursor: pointer;
-      display: inline-block;
-      z-index: 10;
+    .header .header-container #menu-toggle:checked + .burger-menu {
       background: url(./images/icon-close.svg) no-repeat 100% center; }
   .heading-section {
+    position: relative;
     height: auto;
     overflow: visible; }
     .heading-section .heading-container {
