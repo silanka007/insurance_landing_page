@@ -16,7 +16,7 @@
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
   </style>
 
   <!-- adding a polyfill for picture element -->
@@ -34,7 +34,7 @@
 
     <header class="header">
       <div class="header-container">
-          <img src="./images/logo.svg" alt="logo" class="logo">
+          <a href="#" class="logo"><img  src="./images/logo.svg" alt="logo" class="logo"></a>
           <label for="menu-toggle" class="burger-menu"></label>
           <input type="checkbox" id="menu-toggle" name="menu-toggle">
         <nav class="nav">
@@ -59,7 +59,7 @@
               and texhnology to help you find the plan that's right for you. Ensure you
               and your loved ones are protected.
             </p>
-            <a href="#" class="button">view plans</a>
+            <a href="#" class="button-link-primary">view plans</a>
             <!-- intro pattern for mobile view. hidden in desktop layout -->
             <div class="heading-intro-image-mobile">
               <img class="pattern-intro-left-mobile" src="./images/bg-pattern-intro-left-mobile.svg" alt="pattern intro left">
@@ -117,7 +117,7 @@
       <div class="info-section">
         <h2 class="section-title">Find out more <span class="section-title-sub">about how we work</span></h2>
         <div>
-          <a href="#" class="button">how we work</a>
+          <a href="#" class="button-link-primary">how we work</a>
         </div>
       </div>
       <img class="pattern-how-we-work" src="./images/bg-pattern-how-we-work-desktop.svg" alt="pattern how we work">
@@ -128,7 +128,7 @@
       <div class="footer-container">
         <div class="header">
           <div class="header-container footer-mobile">
-            <img class="logo" src="./images/logo.svg" alt="logo" class="logo">
+            <a href="#" class="logo"><img  src="./images/logo.svg" alt="logo" class="logo"></a>
             <div class="socials">
               <img class="social-icon" src="./images/icon-facebook.svg" alt="facebook icon">
               <img class="social-icon" src="./images/icon-twitter.svg" alt="twitter icon">
@@ -140,41 +140,46 @@
         <div class="footer-nav-container margin-bottom-large">
           <div class="footer-nav">
             <ul>
-              <li class="footer-nav-item">our company</li>
-              <li class="footer-nav-item">how we work</li>
-              <li class="footer-nav-item">why insure?</li>
-              <li class="footer-nav-item">view plans</li>
-              <li class="footer-nav-item">reviews</li>
+              <li class="footer-nav-item"><a href="#">our company</a></li>
+              <li class="footer-nav-item"><a href="#">how we work</a></li>
+              <li class="footer-nav-item"><a href="#">why insure?</a></li>
+              <li class="footer-nav-item"><a href="#">view plans</a></li>
+              <li class="footer-nav-item"><a href="#">reviews</a></li>
             </ul>
           </div>
           <div class="footer-nav">
             <ul>
-              <li class="footer-nav-item">help me</li>
-              <li class="footer-nav-item">faq</li>
-              <li class="footer-nav-item">terms of use</li>
-              <li class="footer-nav-item">privacy policy</li>
-              <li class="footer-nav-item">cookies</li>
+              <li class="footer-nav-item"><a href="#">help me</a></li>
+              <li class="footer-nav-item"><a href="#">faq</a></li>
+              <li class="footer-nav-item"><a href="#">terms of use</a></li>
+              <li class="footer-nav-item"><a href="#">privacy policy</a></li>
+              <li class="footer-nav-item"><a href="#">cookies</a></li>
             </ul>
           </div>
           <div class="footer-nav">
             <ul>
-              <li class="footer-nav-item">contact</li>
-              <li class="footer-nav-item">sales</li>
-              <li class="footer-nav-item">support</li>
-              <li class="footer-nav-item">live chat</li>
+              <li class="footer-nav-item"><a href="#">contact</a></li>
+              <li class="footer-nav-item"><a href="#">sales</a></li>
+              <li class="footer-nav-item"><a href="#">support</a></li>
+              <li class="footer-nav-item"><a href="#">live chat</a></li>
             </ul>
           </div>
           <div class="footer-nav">
             <ul>
-              <li class="footer-nav-item">others</li>
-              <li class="footer-nav-item">careers</li>
-              <li class="footer-nav-item">press</li>
-              <li class="footer-nav-item">licenses</li>
+              <li class="footer-nav-item"><a href="#">others</a></li>
+              <li class="footer-nav-item"><a href="#">careers</a></li>
+              <li class="footer-nav-item"><a href="#">press</a></li>
+              <li class="footer-nav-item"><a href="#">licenses</a></li>
             </ul>
           </div>
         </div>
-        <img class="pattern-footer" src="./images/bg-pattern-footer-desktop.svg" alt="pattern footer">
-        <img class="pattern-footer-mobile" src="./images/bg-pattern-footer-mobile.svg" alt="pattern footer">
+        <div class="pattern-footer">
+          <img  src="./images/bg-pattern-footer-desktop.svg" alt="pattern footer">
+        </div>
+        <div class="pattern-footer-mobile">
+          <img  src="./images/bg-pattern-footer-mobile.svg" alt="pattern footer">
+        </div>
+        
       </div>
     </footer>
 
@@ -182,7 +187,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://paulonyekwelu.com" class="button">PAUL ONYEKWELU</a>.
+    Coded by <a href="https://paulonyekwelu.com">PAUL ONYEKWELU</a>.
   </div>
 </body>
 </html>

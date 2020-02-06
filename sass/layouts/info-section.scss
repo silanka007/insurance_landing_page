@@ -5,19 +5,24 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    padding: 0;
 
     .pattern-how-we-work{
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
         height: inherit;
-
     }
+
+    .pattern-how-we-work-mobile{
+        display: none;
+    }
+
     .info-section{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 6rem;
-        
     }
 }

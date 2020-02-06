@@ -4,19 +4,20 @@
     padding-bottom: 6rem;
 
     .pattern-footer{
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
         width: 20vw;
     }
 
-    .pattern-footer-mobile{
-        visibility: hidden;
-    }
-
     .footer-container{
         width: $width-secondary;
         margin: 0 auto;
+
+        .pattern-footer-mobile{
+            display: none;
+        }
 
         .socials{
             padding: 3rem 0;
@@ -35,6 +36,12 @@
                     text-decoration: none;
                     list-style-type:none;
                     padding: 1rem 0;
+
+                    a{
+                        text-decoration: none;
+                        color:$neutral-dark-violet;
+                        
+                    }
                 }
             }
         }
